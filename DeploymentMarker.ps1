@@ -1,16 +1,33 @@
-﻿
 
 
 
+$revision = $env:RELEASE_RELEASENAME
+$user = $env:RELEASE_REQUESTEDFOREMAIL 
 
-Function Marker([string]$revision)
-{
-    Invoke-WebRequest -Uri https://api.newrelic.com/v2/applications/APPID/deployments.json -Method POST -Headers @{'X-Api-Key'='APIKey'} -ContentType 'application/json' -Body '{
-        "deployment": {
-        "revision": $revision,
-        "changelog": "testing",
-        "description": "testing",
-        "user": "noman.sadiq@osn.com"
-    }
-    }'
+
+
+$deployment = @{
+    "revision" = $revision
+    "changelog" = "some test"
+    "description" = "some test"
+    "user" = $user
 }
+
+$Body = @{
+    "deployment" = $deployment
+}
+
+$JSON = $Body | convertto-json
+
+
+$header = @{
+
+"X-Api-Key" = $env:APIKey
+
+}
+
+$appid = $env:APPID
+
+Invoke-WebRequest  https://api.newrelic.com/v2/applications/$appid/deployments.json -Method POST -Headers $header -ContentType 'application/json' -Body $JSON 
+
+
