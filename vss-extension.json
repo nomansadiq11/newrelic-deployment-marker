@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "NewReclicDeploymentMarker",
+    "version": "1.0.1",
+    "name": "NewRelic Deployment Marker",
+    "description": "A task which use to mark the deployment information in NewRelic account. ",
+    "publisher": "nsadiq",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "contributions": [
+        {
+            "id": "NewReclicDeploymentMarker",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "buildtask"
+        }
+    ]
+}
