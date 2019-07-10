@@ -3,7 +3,7 @@
     "id": "NewReclicDeploymentMarker",
     "version": "1.1.0",
     "name": "NewRelic Deployment Marker",
-    "description": "A task which use to mark the deployment information in NewRelic account. ",
+    "description": "This task is developed for deployment marker in NewRelic for the application via Azure DevOps Pipelines.",
     "publisher": "nsadiq",
     "targets": [
         {
@@ -16,6 +16,15 @@
     "categories": [
         "Azure Pipelines"
     ],
+    "galleryFlags": [
+        "Public"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+        
+    },
     "contributions": [
         {
             "id": "NewReclicDeploymentMarker",
@@ -32,5 +41,10 @@
         {
             "path": "buildtask"
         }
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/nomansadiq11/newrelic-deployment-marker.git"
+    }
+
 }
