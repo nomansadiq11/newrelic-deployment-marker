@@ -26,7 +26,7 @@ try {
 
     $JSON = $Body | convertto-json
 
-    write-host $JSON 
+    
 
     $header = @{
 
