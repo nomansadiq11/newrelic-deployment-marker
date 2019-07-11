@@ -1,0 +1,50 @@
+{
+    "manifestVersion": 1,
+    "id": "NewReclicDeploymentMarker",
+    "version": "1.1.2",
+    "name": "NewRelic Deployment Marker",
+    "description": "This task is developed for deployment marker in NewRelic for the application via Azure DevOps Pipelines.",
+    "publisher": "nsadiq",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "galleryFlags": [
+        "Public"
+    ],
+    "content": {
+        "details": {
+            "path": "overview.md"
+        }
+        
+    },
+    "contributions": [
+        {
+            "id": "NewReclicDeploymentMarker",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildtask"
+            }
+        }
+    ],
+    "files": [
+        {
+            "path": "buildtask"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/nomansadiq11/newrelic-deployment-marker.git"
+    }
+
+}
