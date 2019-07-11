@@ -1,5 +1,5 @@
 {
-    "id": "5164728d-cfca-4576-a066-bde89930bf2b",
+    "id": "ba7d1938-81b7-4018-be0a-61093123521b",
     "name": "NewReclic Deployment Marker",
     "friendlyName": "NewReclic Deployment Marker",
     "description": "NewReclic Deployment Marker",
@@ -15,8 +15,8 @@
     "author": "Noman Sadiq",
     "version": {
         "Major": 1,
-        "Minor": 2,
-        "Patch": 4
+        "Minor": 3,
+        "Patch": 5
     },
     "instanceNameFormat": "NewReclic Deployment Marker",
     "groups": [

@@ -1,4 +1,4 @@
-#NewRelic Deployment Marker task
+# NewRelic Deployment Marker task
 
 This task is developed for to mark the deployment marker in NewRelic using Azure DevOps as CI/CD Pipelines. 
 
