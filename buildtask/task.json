@@ -48,7 +48,7 @@
             "type": "string",
             "label": "Revision",
             "defaultValue": "",
-            "required": true,
+            "required": false,
             "helpMarkDown": "Enter revision for deployment Marker"
         },
         {
@@ -56,7 +56,7 @@
             "type": "string",
             "label": "changelog",
             "defaultValue": "",
-            "required": true,
+            "required": false,
             "helpMarkDown": "Change log e.g what changes are deployed"
         },
         {
@@ -64,7 +64,7 @@
             "type": "string",
             "label": "description",
             "defaultValue": "",
-            "required": true,
+            "required": false,
             "helpMarkDown": "Anything just for deployment information"
         } 
     ],
