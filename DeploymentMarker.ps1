@@ -25,7 +25,7 @@ Function DPMARKER()
     }
 
     $appid = $env:APPID
-
+    [Net.ServicePointManager]::SecurityProtocol = "tls12, tls11" # TLS1.0 is deprecated from NewRelic incoming API calls.
     Invoke-WebRequest  https://api.newrelic.com/v2/applications/$appid/deployments.json -Method POST -Headers $header -ContentType 'application/json' -Body $JSON 
 
 }
