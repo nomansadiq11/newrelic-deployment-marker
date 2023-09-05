@@ -1,8 +1,8 @@
 {
     "id": "ba7d1938-81b7-4018-be0a-61093123521b",
-    "name": "NewReclic Deployment Marker",
-    "friendlyName": "NewReclic Deployment Marker",
-    "description": "NewReclic Deployment Marker",
+    "name": "NewRelic Deployment Marker",
+    "friendlyName": "NewRelic Deployment Marker",
+    "description": "NewRelic Deployment Marker",
     "helpMarkDown": "",
     "category": "Build",
     "visibility": [
@@ -18,7 +18,7 @@
         "Minor": 3,
         "Patch": 5
     },
-    "instanceNameFormat": "NewReclic Deployment Marker",
+    "instanceNameFormat": "NewRelic Deployment Marker",
     "groups": [
         {
             "name": "advanced",
