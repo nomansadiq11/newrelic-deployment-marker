@@ -1,6 +1,6 @@
 {
     "manifestVersion": 1,
-    "id": "NewReclicDeploymentMarker",
+    "id": "NewRelicDeploymentMarker",
     "version": "1.1.2",
     "name": "NewRelic Deployment Marker",
     "description": "This task is developed for deployment marker in NewRelic for the application via Azure DevOps Pipelines.",
@@ -27,7 +27,7 @@
     },
     "contributions": [
         {
-            "id": "NewReclicDeploymentMarker",
+            "id": "NewRelicDeploymentMarker",
             "type": "ms.vss-distributed-task.task",
             "targets": [
                 "ms.vss-distributed-task.tasks"
