@@ -13,5 +13,5 @@ This task is developed for to mark the deployment marker in NewRelic using Azure
  - Login and create publisher profile on https://aka.ms/vsmarketplace-manage
  - Modify project and run command in project path : npm install -g tfx-cli
  - Create a tfx file to upload marketplace : npx tfx-cli extension create
- - If an error occured because of uuid generate a new uuid5 on internet and change in tasj.json
+ - If an error occured because of uuid generate a new uuid5 on internet and change in task.json
  - Upload created extension file to marketplace shared for just your organizarion or public
